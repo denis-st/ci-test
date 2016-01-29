@@ -1,6 +1,8 @@
 language: android
 
 script:
-  - CMDS = "cmdA"
-  - CMDS = "$CMDS cmdB"
-  - echo "TEST: $CMDS"
+  - if true; then
+    CMDS = "cmdA";
+    CMDS = "$CMDS cmdB";
+    echo "TEST: $CMDS";
+    fi
